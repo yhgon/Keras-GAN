@@ -190,7 +190,7 @@ class ACGAN():
                 axs[i,j].imshow(gen_imgs[cnt,:,:,0], cmap='gray')
                 axs[i,j].axis('off')
                 cnt += 1
-        fig.savefig("images/%d.png" % epoch)
+        fig.savefig("/content/Keras-GAN/acgan/images/%d.png" % epoch)
         plt.close()
 
     def save_model(self):
