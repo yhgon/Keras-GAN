@@ -197,7 +197,7 @@ class ACGAN():
 
         def save(model, model_name):
             model_path = "/content/Keras-GAN/acgan/saved_model/%s.json" % model_name
-            weights_path = "saved_model/%s_weights.hdf5" % model_name
+            weights_path = "/content/Keras-GAN/acgan/saved_model/%s_weights.hdf5" % model_name
             options = {"file_arch": model_path,
                         "file_weight": weights_path}
             json_string = model.to_json()
