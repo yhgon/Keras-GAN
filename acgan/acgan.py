@@ -1,6 +1,5 @@
 from __future__ import print_function, division
-import sys,os
-sys.path.append(os.getcwd())
+
 
 from keras.datasets import mnist
 from keras.layers import Input, Dense, Reshape, Flatten, Dropout, multiply
@@ -197,7 +196,7 @@ class ACGAN():
     def save_model(self):
 
         def save(model, model_name):
-            model_path = "saved_model/%s.json" % model_name
+            model_path = "/content/Keras-GAN/acgan/saved_model/%s.json" % model_name
             weights_path = "saved_model/%s_weights.hdf5" % model_name
             options = {"file_arch": model_path,
                         "file_weight": weights_path}
