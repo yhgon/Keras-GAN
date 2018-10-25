@@ -9,6 +9,7 @@ class DataLoader():
         self.img_res = img_res
 
     def load_data(self, batch_size=1, is_testing=False):
+        self.dataset_name = 'edges2shoes'
         data_type = "train" if not is_testing else "test"
         path = glob('./datasets/%s/%s/*' % (self.dataset_name, data_type))
 
