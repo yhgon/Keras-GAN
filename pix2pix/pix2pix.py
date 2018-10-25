@@ -186,6 +186,7 @@ class Pix2Pix():
                     self.sample_images(epoch, batch_i)
 
     def sample_images(self, epoch, batch_i):
+        self.dataset_name = 'edges2shoes'
         os.makedirs('images/%s' % self.dataset_name, exist_ok=True)
         r, c = 3, 3
 
